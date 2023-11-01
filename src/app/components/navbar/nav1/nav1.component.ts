@@ -27,11 +27,17 @@ export class Nav1Component {
 
   isDarkmode(){
     function darkmode(){
-      const body = document.querySelector('body')!
+      //const body = document.querySelector('body')!
       const darkMode = document.querySelector('#darkmode')!
+      const darkModeIcon = document.querySelector('#darkmodeicon')!
 
-      body.classList.toggle('dark')
+      document.documentElement.classList.toggle('dark')
       darkMode.classList.toggle('rotate-45')
+      if (document.documentElement.className == 'dark'){
+          darkModeIcon.className = 'bx bx-sun'
+      } else{
+          darkModeIcon.className = 'bx bx-moon'
+      }
     }
 
     darkmode()
