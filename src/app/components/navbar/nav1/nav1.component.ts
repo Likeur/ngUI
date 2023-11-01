@@ -24,4 +24,16 @@ export class Nav1Component {
     }
     openNav()
   }
+
+  isDarkmode(){
+    function darkmode(){
+      const body = document.querySelector('body')!
+      const darkMode = document.querySelector('#darkmode')!
+
+      body.classList.toggle('dark')
+      darkMode.classList.toggle('rotate-45')
+    }
+
+    darkmode()
+  }
 }
