@@ -17,7 +17,7 @@ export class Nav1Component {
       const barUn = document.querySelector('#barUn')!
       const barDeux = document.querySelector('#barDeux')!
 
-      navBar.classList.toggle('translate-x-[1000px]')
+      navBar.classList.toggle('hidden')
       barUn.classList.toggle('rotate-45')
       barDeux.classList.toggle('rotate-45')
 
