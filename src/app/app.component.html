@@ -1,10 +1,50 @@
-<app-nav1 class="fixed w-full"/>
-<div class="flex flex-col items-center justify-center h-screen ">
-  <img src="../assets/img/ng ui.png" width="150" alt="">
-  <h1 class="w-80 text-center mt-5 lg:w-96 duration-300 dark:text-white">NgUi is a set of UIs Building blocks Components for Angular, <br> styled with tailwindcss</h1>
-  <p class="text-red-700 dark:text-white duration-300">in Progress ... </p>
+<app-nav1 class="z-50"/>
+<div class="flex z-0 flex-col items-center justify-center">
+  <h1 class="text-3xl p-3 lg:text-5xl text-blue-950 text-center mt-12 lg:mt-24 font-bold duration-300 dark:text-white"><span class="hidden lg:block ">A set of </span><span class="bg-gradient-to-r from-red-600 to-orange-600 text-transparent bg-clip-text">UIs Building blocks <br> for Angular <span class=" lg:hidden">and</span> </span><span class="hidden lg:block">, styled with</span> <br> tailwindcss</h1>
+  <div class="mt-4">
+    <a class="bg-blue-600 inline-block text-white p-3 rounded-full hover:scale-90 duration-300 cursor-pointer">All blocks</a>
+    <a class="ml-4 underline hover:scale-90 duration-300 inline-block cursor-pointer text-blue-950 dark:text-white">Templates</a>
+  </div>
+  <section class=" flex justify-center mt-16 relative z-50 w-full h-[20rem]">
+    <div class="p-4 relative flex justify-center w-full">
+      <div class="absolute -left-44 lg:left-6 top-0 block rounded-3xl z-50 h-[30rem] w-[15rem]">
+        <div>
+          <div class="h-[10rem] shadow-md rounded-3xl bg-indigo-400"></div>
+          <div class="h-[10rem] shadow-md rounded-3xl bg-indigo-600 mt-5"></div>
+          <div class="h-[5rem] shadow-md rounded-3xl bg-indigo-600 mt-5"></div>
+        </div>
+      </div>
+      <div class="relative w-full flex justify-center h-[25rem] lg:overflow-hidden">
+        <div class="relative block lg:top-5 scale-75 lg:scale-100 rounded-3xl z-50 h-[40rem] lg:h-[30rem] w-[15rem] lg:w-[35rem]">
+          <div class="h-[15rem] shadow-md rounded-3xl bg-indigo-400"></div>
+          <div class="h-[10rem] shadow-md rounded-3xl bg-indigo-600 mt-5"></div>
+          
+        </div>
+        <div class="absolute blur-xl opacity-20 block top-12 h-[60rem] z-10 w-[60rem] bg-gradient-to-b from-blue-400 rounded-full to-blue-600"></div>
+      </div>
+      <div class="absolute -right-44 lg:right-6 -top-16 block rounded-3xl z-50 h-[30rem] w-[15rem]">
+        <div>
+          <div class="h-[5rem] shadow-md rounded-3xl bg-indigo-400"></div>
+          <div class="h-[20rem] shadow-md rounded-3xl bg-indigo-600 mt-5"></div>
+        </div>
+      </div>
+      
+    </div>
+
+  </section>
+  <section class="h-[10rem]">
+    
+  </section>
+  <section class="p-4">
+    <div class="flex items-center">
+      <span class="lg:border p-2 lg:rounded-full text-5xl"><i class='bx bxl-angular'></i></span>
+      <span class="h-1 w-1 rounded-full ml-2 bg-blue-950 block"></span>
+      <span class=" ml-2  lg:border p-2 lg:rounded-full text-5xl"><i class='bx bxl-tailwind-css' ></i></span>
+    </div>
+  </section>
   
 </div>
+
 
 <app-footer1 />
 
