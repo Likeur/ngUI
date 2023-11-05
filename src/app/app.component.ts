@@ -9,7 +9,7 @@ import { Nav1Component } from './components/navbar/nav1/nav1.component';
   standalone: true,
   imports: [CommonModule, RouterOutlet, Nav1Component, Footer1Component],
   templateUrl: './app.component.html',
-  styles: [],
+ 
 })
 export class AppComponent{
   
