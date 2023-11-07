@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 })
 export class Nav1Component {
 
+  isCloseNav = false
+
   isOpenNav(){
     function openNav(){
       const navBar = document.querySelector('#nav-bar')!
@@ -23,6 +25,20 @@ export class Nav1Component {
 
     }
     openNav()
+    this.isCloseNav = false
+  }
+
+  closeNav(){
+    this.isCloseNav = !this.isCloseNav
+
+    function toggleBar(){
+      const barUn = document.querySelector('#barUn')!
+      const barDeux = document.querySelector('#barDeux')!
+      
+      barUn.classList.remove('rotate-45')
+      barDeux.classList.remove('rotate-45')
+    }
+    toggleBar()
   }
 
   isDarkmode(){
