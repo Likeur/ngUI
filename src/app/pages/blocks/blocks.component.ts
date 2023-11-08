@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { BlockNavComponent } from './block-nav/block-nav.component';
 
 @Component({
   selector: 'app-blocks',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, RouterOutlet],
   templateUrl: './blocks.component.html',
-  styles: [
-  ]
 })
 export default class BlocksComponent {
 
+  
 }
